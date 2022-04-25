@@ -1,0 +1,9 @@
+@mixin grid($count, $gap) {
+  flex-basis: calc(100% / #{$count} - #{$gap});
+}
+@mixin negative-left-marg($gap) {
+  margin-left: calc((-1) * #{$gap});
+}
+@mixin negative-top-marg($gap) {
+  margin-top: calc((-1) * #{$gap});
+}

@@ -1,0 +1,20 @@
+%subtitle {
+  color: getColor("title-text-color");
+  letter-spacing: 0.03em;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+%text {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+%flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+%position-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

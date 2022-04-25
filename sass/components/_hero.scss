@@ -1,0 +1,28 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      getColor("hero-overlay-color"),
+      getColor("hero-overlay-color")
+    ),
+    url(../images/hero.jpg);
+  background-color: getColor("hero-background-color");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: getColor("regular-white-color");
+  text-align: center;
+}
+.hero__title {
+  margin-bottom: $item-gap;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}

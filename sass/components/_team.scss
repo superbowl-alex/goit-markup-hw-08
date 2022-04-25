@@ -1,0 +1,37 @@
+.section--other-background {
+  background-color: getColor("secondary-background-color");
+}
+.team {
+  display: flex;
+  @include negative-left-marg($item-gap);
+}
+.team__item {
+  @include grid(4, $item-gap);
+  margin-left: $item-gap;
+  box-shadow: $team-card-shaddow;
+  border-radius: 0px 0px 4px 4px;
+}
+.team__image {
+  display: block;
+  max-width: 100%;
+}
+.team__box {
+  padding-top: $item-gap;
+  padding-bottom: $item-gap;
+  max-width: 100%;
+  text-align: center;
+  background-color: getColor("regular-white-color");
+  font-size: 16px;
+  line-height: 1.19;
+}
+.team__title {
+  @extend %subtitle;
+  margin-bottom: 10px;
+  font-weight: 500;
+  text-transform: none;
+}
+.team__text {
+  @extend %text;
+  line-height: 1.19;
+  margin-bottom: 16px;
+}

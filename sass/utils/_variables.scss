@@ -1,0 +1,40 @@
+$item-gap: 30px;
+$button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$portfolio-button-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+$portfolio-card-shaddow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+$team-card-shaddow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+$primary-font: Roboto, sans-serif;
+$logo-font: Raleway, sans-serif;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$colors: (
+  "primary-text-color": #757575,
+  "title-text-color": #212121,
+  "accent-color": #2196f3,
+  "contact-text-color": rgba(255, 255, 255, 0.6),
+  "regular-white-color": #ffffff,
+  "regular-black-color": #000000,
+  "icon-color": #afb1b8,
+  "footer-social-background-color": rgba(255, 255, 255, 0.1),
+  "footer-input-color": rgba(255, 255, 255, 0.3),
+  "button-hover-color": #188ce8,
+  "button-close-color": rgba(0, 0, 0, 0.1),
+  "primary-background-color": #ffffff,
+  "secondary-background-color": #f5f4fa,
+  "hero-background-color": #c4c4c4,
+  "footer-background-color": rgb(47, 48, 58),
+  "hero-overlay-color": rgba(47, 48, 58, 0.4),
+  "work-overlay-color": rgba(47, 48, 58, 0.8),
+  "modal-overlay-color": rgba(0, 0, 0, 0.2),
+  "modal-input-color": rgba(33, 33, 33, 0.2),
+  "modal-form-placeholder-color": rgba(117, 117, 117, 0.5),
+  "portfolio-overlay-color": rgba(33, 150, 243, 0.9),
+  "header-border-line-color": #ececec,
+  "portfolio-border-line-color": #eeeeee,
+);
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

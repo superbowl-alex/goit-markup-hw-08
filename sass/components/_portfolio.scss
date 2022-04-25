@@ -1,0 +1,97 @@
+.filtre {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filtre__item:not(:last-child) {
+  margin-right: 8px;
+}
+.filtre-button {
+  display: block;
+  padding: 6px 22px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1.63;
+  color: getColor("title-text-color");
+  background-color: getColor("secondary-background-color");
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: color 250ms $timing-function,
+    background-color 250ms $timing-function, box-shadow 250ms $timing-function;
+  &:hover,
+  &:focus {
+    color: getColor("regular-white-color");
+    background-color: getColor("accent-color");
+    box-shadow: $portfolio-button-shadow;
+  }
+}
+.filtre-button--current {
+  color: getColor("regular-white-color");
+  background-color: getColor("accent-color");
+  box-shadow: $portfolio-button-shadow;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  @include negative-left-marg($item-gap);
+  @include negative-top-marg($item-gap);
+}
+.gallery__item {
+  @include grid(3, $item-gap);
+  margin-left: $item-gap;
+  margin-top: $item-gap;
+}
+.gallery__link {
+  display: block;
+  transition: box-shadow 250ms $timing-function;
+  &:hover,
+  &:focus {
+    box-shadow: $portfolio-card-shaddow;
+  }
+}
+.gallery__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.gallery__actions {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  padding: 63px 24px;
+  background-color: getColor("portfolio-overlay-color");
+  color: getColor("regular-white-color");
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  transform: translateY(101%);
+  transition: transform 250ms $timing-function;
+  .gallery__link:hover &,
+  .gallery__link:focus & {
+    transform: translateY(0);
+  }
+}
+.gallery__image {
+  display: block;
+  max-width: 100%;
+}
+.gallery__description {
+  padding: 20px 24px;
+  border: 1px solid getColor("portfolio-border-line-color");
+  border-top: 0;
+}
+.gallery__title {
+  margin-bottom: 4px;
+  color: getColor("title-text-color");
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.gallery__text {
+  color: getColor("primary-text-color");
+  font-size: 16px;
+  line-height: 1.89;
+  letter-spacing: 0.03em;
+}
