@@ -7,7 +7,8 @@
   background-color: getColor("modal-overlay-color");
   opacity: 1;
   visibility: visible;
-  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
+  transition: opacity $duration $timing-function,
+    visibility $duration $timing-function;
 }
 .backdrop--hidden {
   visibility: hidden;
@@ -25,7 +26,8 @@
   border-radius: 4px;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
-  transition: opacity 250ms $timing-function, transform 250ms $timing-function;
+  transition: opacity $duration $timing-function,
+    transform $duration $timing-function;
 }
 .backdrop--hidden .modal {
   transform: translate(-50%, -50%) scale(0);
@@ -44,7 +46,7 @@
   background-color: getColor("regular-white-color");
   color: getColor("regular-black-color");
   border: 1px solid getColor("button-close-color");
-  transition: color 250ms $timing-function;
+  transition: color $duration $timing-function;
   &:hover,
   &:focus {
     color: getColor("accent-color");

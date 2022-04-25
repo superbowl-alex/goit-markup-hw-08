@@ -12,8 +12,8 @@
   border-radius: 50%;
   color: getColor("icon-color");
   background-color: getColor("regular-white-color");
-  transition: color 250ms $timing-function,
-    background-color 250ms $timing-function;
+  transition: color $duration $timing-function,
+    background-color $duration $timing-function;
   &:hover,
   &:focus {
     color: getColor("regular-white-color");

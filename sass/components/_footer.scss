@@ -18,7 +18,7 @@
 }
 .adress__link {
   color: getColor("contact-text-color");
-  transition: color 250ms $timing-function;
+  transition: color $duration $timing-function;
   &:hover,
   &:focus {
     color: getColor("accent-color");
