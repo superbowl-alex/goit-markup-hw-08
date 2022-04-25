@@ -2,23 +2,13 @@
   padding-bottom: 0;
 }
 .features {
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  @include negative-left-marg($item-gap);
 }
 .features__item {
-  @media screen and (min-width: $tablet) {
-  }
-  @media screen and (min-width: $desktop) {
-  }
-  &:not(:last-child) {
-    @media screen and (max-width: (calc(#{$tablet} - 1))) {
-      margin-bottom: 30px;
-    }
-  }
+  @include grid(4, $item-gap);
+  margin-left: $item-gap;
 }
-
 .features__box {
   @extend %flex-center;
   height: 120px;
@@ -27,7 +17,6 @@
   margin-bottom: 30px;
 }
 .features__title {
-  text-align: center;
   @extend %subtitle;
   margin-bottom: 10px;
   line-height: 1.14;

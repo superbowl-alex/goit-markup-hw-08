@@ -1,6 +1,10 @@
 .work {
+  display: flex;
+  @include negative-left-marg($item-gap);
 }
 .work__item {
+  @include grid(3, $item-gap);
+  margin-left: $item-gap;
 }
 .work__image {
   display: block;

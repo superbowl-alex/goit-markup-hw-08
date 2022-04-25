@@ -4,6 +4,8 @@
   background-color: getColor("footer-background-color");
 }
 .container--footer {
+  display: flex;
+  align-items: baseline;
 }
 .adress {
   margin-top: 20px;
@@ -50,6 +52,7 @@
   margin-left: auto;
 }
 .subscribe-form {
+  display: flex;
 }
 .subscribe-form__input {
   width: 358px;

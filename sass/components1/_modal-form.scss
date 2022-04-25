@@ -1,0 +1,101 @@
+.modal-form {
+  padding: 40px;
+}
+.modal-form__title {
+  display: block;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  color: getColor("title-text-color");
+}
+.modal-form__field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: getColor("title-text-color");
+  transition: color $duration $timing-function;
+  &:focus-within {
+    color: getColor("accent-color");
+  }
+}
+.modal-form__field + .modal-form__field {
+  margin-top: 10px;
+}
+.modal-form__label {
+  color: getColor("primary-text-color");
+}
+.modal-form__input {
+  display: block;
+  height: 40px;
+  padding-left: 42px;
+  margin-top: 4px;
+  line-height: inherit;
+  border: 1px solid getColor("modal-input-color");
+  border-radius: 4px;
+  transition: border-color $duration $timing-function;
+  .modal-form__field:focus-within & {
+    border-color: getColor("accent-color");
+  }
+}
+.modal-form__textarea {
+  display: block;
+  height: 120px;
+  padding: 12px 16px;
+  margin-top: 4px;
+  line-height: inherit;
+  border: 1px solid getColor("modal-input-color");
+  border-radius: 4px;
+  transition: border-color $duration $timing-function;
+  resize: none;
+  .modal-form__field:focus-within & {
+    border-color: getColor("accent-color");
+  }
+}
+.modal-form__textarea::placeholder {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  line-height: 1.17;
+  color: getColor("modal-form-placeholder-color");
+  .modal-form__field:focus-within & {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+.modal-form__icon {
+  position: absolute;
+  top: 38px;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: currentColor;
+}
+.form-agreement {
+  @extend %flex-center;
+  height: 24px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.form-agreement__icon {
+  margin-right: 8px;
+  fill: getColor("regular-white-color");
+  border: 2px solid getColor("title-text-color");
+  border-radius: 2px;
+  transition: border-color $duration $timing-function;
+  .form-agreement__input:focus + & {
+    border-color: getColor("accent-color");
+  }
+  .form-agreement__input:checked + & {
+    background-color: getColor("accent-color");
+    border: 0;
+  }
+}
+.form-agreement__link {
+  text-decoration: underline;
+  color: getColor("accent-color");
+}

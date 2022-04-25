@@ -2,6 +2,8 @@
   border-bottom: 1px solid getColor("header-border-line-color");
 }
 .container__header {
+  display: flex;
+  align-items: center;
 }
 .header__logo {
   padding-top: 24px;
@@ -9,6 +11,7 @@
   margin-right: 93px;
 }
 .navigation {
+  display: flex;
 }
 .navigation__list,
 .contacts {
@@ -17,6 +20,7 @@
   letter-spacing: 0.02em;
 }
 .navigation__list {
+  display: flex;
 }
 .navigation__item:not(:last-child) {
   margin-right: 50px;
@@ -48,6 +52,8 @@
   }
 }
 .contacts {
+  display: flex;
+  margin-left: auto;
 }
 .contacts__item:not(:last-child) {
   margin-right: 30px;

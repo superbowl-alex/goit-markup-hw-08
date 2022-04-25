@@ -2,8 +2,12 @@
   background-color: getColor("secondary-background-color");
 }
 .team {
+  display: flex;
+  @include negative-left-marg($item-gap);
 }
 .team__item {
+  @include grid(4, $item-gap);
+  margin-left: $item-gap;
   box-shadow: $team-card-shaddow;
   border-radius: 0px 0px 4px 4px;
 }

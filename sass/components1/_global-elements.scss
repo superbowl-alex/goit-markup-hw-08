@@ -5,8 +5,8 @@ body {
   font-size: 14px;
 }
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section__title {
   margin-bottom: 50px;
@@ -17,18 +17,10 @@ body {
   text-align: center;
 }
 .container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-  @media screen and (min-width: $tablet) {
-    width: $tablet;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
 }
 .button {
   @extend %flex-center;

@@ -1,6 +1,10 @@
 .clients {
+  display: flex;
+  @include negative-left-marg($item-gap);
 }
 .clients__item {
+  @include grid(6, $item-gap);
+  margin-left: $item-gap;
 }
 .clients__link {
   @extend %flex-center;

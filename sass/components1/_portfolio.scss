@@ -7,7 +7,7 @@
   margin-right: 8px;
 }
 .filtre-button {
-  display: inline-block;
+  display: block;
   padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
@@ -34,8 +34,15 @@
   box-shadow: $portfolio-button-shadow;
 }
 .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  @include negative-left-marg($item-gap);
+  @include negative-top-marg($item-gap);
 }
 .gallery__item {
+  @include grid(3, $item-gap);
+  margin-left: $item-gap;
+  margin-top: $item-gap;
 }
 .gallery__link {
   display: block;
