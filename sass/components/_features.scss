@@ -5,16 +5,21 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
+    margin: calc((-1) * #{$item-gap} / 2);
   }
 }
 .features__item {
   @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 2 * #{$item-gap}) / 2);
+    margin: calc(#{$item-gap} / 2);
   }
   @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 4 * #{$item-gap}) / 4);
+    margin: calc(#{$item-gap} / 2);
   }
   &:not(:last-child) {
-    @media screen and (max-width: (calc(#{$tablet} - 1))) {
-      margin-bottom: 30px;
+    @media screen and (max-width: (calc(#{$tablet} - 1px))) {
+      margin-bottom: $item-gap;
     }
   }
 }
