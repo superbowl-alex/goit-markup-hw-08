@@ -2,10 +2,28 @@
   background-color: getColor("secondary-background-color");
 }
 .team {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc((-1) * #{$item-gap} / 2);
+  }
 }
 .team__item {
   box-shadow: $team-card-shaddow;
   border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 2 * #{$item-gap}) / 2);
+    margin: calc(#{$item-gap} / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 4 * #{$item-gap}) / 4);
+    margin: calc(#{$item-gap} / 2);
+  }
+  &:not(:last-child) {
+    @media screen and (max-width: (calc(#{$tablet} - 1px))) {
+      margin-bottom: $item-gap;
+    }
+  }
 }
 .team__image {
   display: block;
@@ -13,12 +31,15 @@
 }
 .team__box {
   padding-top: $item-gap;
-  padding-bottom: $item-gap;
+  padding-bottom: 24px;
   max-width: 100%;
   text-align: center;
   background-color: getColor("regular-white-color");
   font-size: 16px;
   line-height: 1.19;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: $item-gap;
+  }
 }
 .team__title {
   @extend %subtitle;

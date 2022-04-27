@@ -13,12 +13,17 @@ body {
   }
 }
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: getColor("title-text-color");
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 .container {
   padding-left: 15px;

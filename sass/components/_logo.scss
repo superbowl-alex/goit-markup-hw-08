@@ -2,10 +2,14 @@
   display: block;
   font-family: $logo-font;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: getColor("accent-color");
+  @media screen and (min-width: $desktop) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo__dark {
   color: getColor("regular-black-color");

@@ -1,6 +1,19 @@
-.work {
+.section--no-padding-top {
+  padding-top: 0;
 }
+.section--hiden {
+  @media screen and (max-width: (calc(#{$desktop} - 1px))) {
+    display: none;
+  }
+}
+.work {
+  display: flex;
+  margin: calc((-1) * #{$item-gap} / 2);
+}
+
 .work__item {
+  flex-basis: calc((100% - 3 * #{$item-gap}) / 3);
+  margin: calc(#{$item-gap} / 2);
 }
 .work__image {
   display: block;
