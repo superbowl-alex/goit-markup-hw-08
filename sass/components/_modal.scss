@@ -19,8 +19,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: getColor("regular-white-color");
   box-shadow: $team-card-shaddow;
   border-radius: 4px;
@@ -28,6 +28,10 @@
   transform: translate(-50%, -50%) scale(1);
   transition: opacity $duration $timing-function,
     transform $duration $timing-function;
+  @media screen and (min-width: $desktop) {
+    width: 528px;
+    height: 581px;
+  }
 }
 .backdrop--hidden .modal {
   transform: translate(-50%, -50%) scale(0);

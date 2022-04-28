@@ -2,6 +2,7 @@
   border-bottom: 1px solid getColor("header-border-line-color");
 }
 .container__header {
+  display: flex;
 }
 .header__logo {
   padding-top: 24px;
@@ -9,6 +10,12 @@
   margin-right: 93px;
 }
 .navigation {
+}
+.button-menu {
+  display: inline-flex;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
 }
 .navigation__list,
 .contacts {
