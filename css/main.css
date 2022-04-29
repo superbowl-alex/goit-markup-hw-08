@@ -456,12 +456,15 @@ body {
 }
 
 .button-menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   padding: 0;
   border: 0;
   background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .button-menu {
+    display: none;
+  }
 }
 
 .button-menu__icon-cross {
