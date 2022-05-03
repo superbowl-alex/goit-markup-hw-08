@@ -3,6 +3,9 @@ body {
   color: getColor("primary-text-color");
   font-family: $primary-font;
   font-size: 14px;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 .section {
   padding-top: 60px;
@@ -47,7 +50,6 @@ body {
   height: 50px;
   padding: 0;
   border: none;
-  cursor: pointer;
   color: getColor("regular-white-color");
   background-color: getColor("accent-color");
   box-shadow: $button-shadow;

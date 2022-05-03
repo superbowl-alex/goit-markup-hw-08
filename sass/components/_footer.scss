@@ -88,6 +88,7 @@
   margin: 0 0 20px;
   padding-left: 16px;
   padding-right: 0;
+  color: getColor("contact-text-color");
   background-color: inherit;
   border: 1px solid getColor("footer-input-color");
   box-shadow: $button-shadow;
@@ -96,7 +97,6 @@
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: getColor("contact-text-color");
   }
   @media screen and (min-width: $tablet) {
     width: 450px;
