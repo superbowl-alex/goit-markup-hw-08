@@ -20,7 +20,7 @@
     margin: calc(#{$item-gap} / 2);
   }
   &:not(:last-child) {
-    @media screen and (max-width: (calc(#{$tablet} - 1px))) {
+    @media screen and (max-width: $pre-tablet) {
       margin-bottom: $item-gap;
     }
   }

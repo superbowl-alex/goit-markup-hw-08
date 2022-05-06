@@ -2,7 +2,7 @@
   padding-top: 0;
 }
 .section--hiden {
-  @media screen and (max-width: (calc(#{$desktop} - 1px))) {
+  @media screen and (max-width: $pre-desktop) {
     display: none;
   }
 }
