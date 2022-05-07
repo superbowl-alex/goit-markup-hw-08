@@ -6,6 +6,11 @@ body {
   &.modal-open {
     overflow: hidden;
   }
+  @media screen and (max-width: $pre-tablet) {
+    &.menu-open {
+      overflow: hidden;
+    }
+  }
 }
 .section {
   padding-top: 60px;

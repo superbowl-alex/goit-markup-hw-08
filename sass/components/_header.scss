@@ -131,27 +131,27 @@
   display: flex;
   @media screen and (max-width: $pre-tablet) {
     margin-top: auto;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-content: space-between;
   }
   @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
   }
   @media screen and (min-width: $desktop) {
-    flex-direction: row;
+    flex-direction: row-reverse;
     margin-left: auto;
   }
 }
 .contacts__item:not(:last-child) {
   @media screen and (max-width: $pre-tablet) {
-    margin-top: 32px;
+    margin-bottom: 32px;
   }
   @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
   @media screen and (min-width: $desktop) {
-    margin-right: 30px;
+    margin-left: 30px;
   }
 }
 .contacts__link {
