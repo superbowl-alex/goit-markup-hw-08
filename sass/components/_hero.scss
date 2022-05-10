@@ -4,18 +4,70 @@
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  background-image: linear-gradient(
-      to right,
-      getColor("hero-overlay-color"),
-      getColor("hero-overlay-color")
-    ),
-    url(../images/hero.jpg);
   background-color: getColor("hero-background-color");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: getColor("regular-white-color");
   text-align: center;
+  background-image: linear-gradient(
+      to right,
+      getColor("hero-overlay-color"),
+      getColor("hero-overlay-color")
+    ),
+    url(../images/hero/hero-mobile.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    & {
+      background-image: linear-gradient(
+          to right,
+          getColor("hero-overlay-color"),
+          getColor("hero-overlay-color")
+        ),
+        url(../images/hero/hero-mobile@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $post-mobile) {
+    background-image: linear-gradient(
+        to right,
+        getColor("hero-overlay-color"),
+        getColor("hero-overlay-color")
+      ),
+      url(../images/hero/hero-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            getColor("hero-overlay-color"),
+            getColor("hero-overlay-color")
+          ),
+          url(../images/hero/hero-tablet@2x.jpg);
+      }
+    }
+  }
+  @media screen and (min-width: $post-tablet) {
+    background-image: linear-gradient(
+        to right,
+        getColor("hero-overlay-color"),
+        getColor("hero-overlay-color")
+      ),
+      url(../images/hero/hero-desktop.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      & {
+        background-image: linear-gradient(
+            to right,
+            getColor("hero-overlay-color"),
+            getColor("hero-overlay-color")
+          ),
+          url(../images/hero/hero-desktop@2x.jpg);
+      }
+    }
+  }
   @media screen and (min-width: $desktop) {
     padding-top: 200px;
     padding-bottom: 200px;
