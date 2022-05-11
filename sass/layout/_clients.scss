@@ -1,18 +1,18 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
-  margin: calc((-1) * #{$item-gap} / 2);
+  @include negative-parent-margin($item-gap);
 }
 .clients__item {
-  flex-basis: calc((100% - 2 * #{$item-gap}) / 2);
-  margin: calc(#{$item-gap} / 2);
+  @include grid(2, $item-gap);
+  @include margin($item-gap);
   @media screen and (min-width: $tablet) {
-    flex-basis: calc((100% - 3 * #{$item-gap}) / 3);
-    margin: calc(#{$item-gap} / 2);
+    @include grid(3, $item-gap);
+    @include margin($item-gap);
   }
   @media screen and (min-width: $desktop) {
-    flex-basis: calc((100% - 6 * #{$item-gap}) / 6);
-    margin: calc(#{$item-gap} / 2);
+    @include grid(6, $item-gap);
+    @include margin($item-gap);
   }
 }
 .clients__link {

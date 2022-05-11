@@ -27,7 +27,6 @@
   background-color: getColor("regular-white-color");
   box-shadow: $team-card-shaddow;
   border-radius: 4px;
-  opacity: 1;
   transition: opacity $duration $timing-function,
     transform $duration $timing-function;
   @media screen and (max-width: $pre-desktop) {
@@ -47,8 +46,13 @@
     transform: translate(-50%, -50%);
   }
   .backdrop--hidden & {
-    transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
+    @media screen and (max-width: $pre-desktop) {
+      transform: scale(0);
+      opacity: 0;
+    }
+    @media screen and (min-width: $desktop) {
+      transform: translate(-50%, -50%) scale(0);
+    }
   }
 }
 .button-close {

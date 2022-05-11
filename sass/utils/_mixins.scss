@@ -1,9 +1,15 @@
+@mixin negative-parent-margin($grid) {
+  margin: calc((-1) * #{$grid} / 2);
+}
 @mixin grid($count, $gap) {
-  flex-basis: calc(100% / #{$count} - #{$gap});
+  flex-basis: calc((100% - #{$count} * #{$gap}) / #{$count});
 }
-@mixin negative-left-marg($gap) {
-  margin-left: calc((-1) * #{$gap});
+@mixin margin($gap) {
+  margin: calc(#{$gap} / 2);
 }
-@mixin negative-top-marg($gap) {
-  margin-top: calc((-1) * #{$gap});
+@mixin font($fs: 16px, $fw: 500, $lh: 1.19, $ls: 0.03em) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
 }

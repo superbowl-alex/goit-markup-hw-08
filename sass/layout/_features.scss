@@ -2,17 +2,17 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
-    margin: calc((-1) * #{$item-gap} / 2);
+    @include negative-parent-margin($item-gap);
   }
 }
 .features__item {
   @media screen and (min-width: $tablet) {
-    flex-basis: calc((100% - 2 * #{$item-gap}) / 2);
-    margin: calc(#{$item-gap} / 2);
+    @include grid(2, $item-gap);
+    @include margin($item-gap);
   }
   @media screen and (min-width: $desktop) {
-    flex-basis: calc((100% - 4 * #{$item-gap}) / 4);
-    margin: calc(#{$item-gap} / 2);
+    @include grid(4, $item-gap);
+    @include margin($item-gap);
   }
   &:not(:last-child) {
     @media screen and (max-width: $pre-tablet) {
@@ -29,8 +29,8 @@
   margin-bottom: 30px;
 }
 .features__title {
-  text-align: center;
   @extend %subtitle;
+  text-align: center;
   margin-bottom: 10px;
   line-height: 1.14;
 }

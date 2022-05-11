@@ -8,12 +8,12 @@
 }
 .work {
   display: flex;
-  margin: calc((-1) * #{$item-gap} / 2);
+  @include negative-parent-margin($item-gap);
 }
 
 .work__item {
-  flex-basis: calc((100% - 3 * #{$item-gap}) / 3);
-  margin: calc(#{$item-gap} / 2);
+  @include grid(3, $item-gap);
+  @include margin($item-gap);
 }
 .work__image {
   display: block;
@@ -35,5 +35,4 @@
   @extend %subtitle;
   color: getColor("regular-white-color");
   line-height: 1.14;
-  letter-spacing: 0.03em;
 }
