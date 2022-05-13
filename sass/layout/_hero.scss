@@ -10,6 +10,20 @@
   background-size: cover;
   color: getColor("regular-white-color");
   text-align: center;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(getColor("hero-overlay-color")),
+      to(getColor("hero-overlay-color"))
+    ),
+    url(../images/hero/hero-mobile.jpg);
+  background-image: -o-linear-gradient(
+      left,
+      getColor("hero-overlay-color"),
+      getColor("hero-overlay-color")
+    ),
+    url(../images/hero/hero-mobile.jpg);
   background-image: linear-gradient(
       to right,
       getColor("hero-overlay-color"),
@@ -17,9 +31,25 @@
     ),
     url(../images/hero/hero-mobile.jpg);
   @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          from(getColor("hero-overlay-color")),
+          to(getColor("hero-overlay-color"))
+        ),
+        url(../images/hero/hero-mobile@2x.jpg);
+      background-image: -o-linear-gradient(
+          left,
+          getColor("hero-overlay-color"),
+          getColor("hero-overlay-color")
+        ),
+        url(../images/hero/hero-mobile@2x.jpg);
       background-image: linear-gradient(
           to right,
           getColor("hero-overlay-color"),
@@ -29,6 +59,20 @@
     }
   }
   @media screen and (min-width: $post-mobile) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(getColor("hero-overlay-color")),
+        to(getColor("hero-overlay-color"))
+      ),
+      url(../images/hero/hero-tablet.jpg);
+    background-image: -o-linear-gradient(
+        left,
+        getColor("hero-overlay-color"),
+        getColor("hero-overlay-color")
+      ),
+      url(../images/hero/hero-tablet.jpg);
     background-image: linear-gradient(
         to right,
         getColor("hero-overlay-color"),
@@ -36,9 +80,25 @@
       ),
       url(../images/hero/hero-tablet.jpg);
     @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(getColor("hero-overlay-color")),
+            to(getColor("hero-overlay-color"))
+          ),
+          url(../images/hero/hero-tablet@2x.jpg);
+        background-image: -o-linear-gradient(
+            left,
+            getColor("hero-overlay-color"),
+            getColor("hero-overlay-color")
+          ),
+          url(../images/hero/hero-tablet@2x.jpg);
         background-image: linear-gradient(
             to right,
             getColor("hero-overlay-color"),
@@ -49,6 +109,20 @@
     }
   }
   @media screen and (min-width: $post-tablet) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(getColor("hero-overlay-color")),
+        to(getColor("hero-overlay-color"))
+      ),
+      url(../images/hero/hero-desktop.jpg);
+    background-image: -o-linear-gradient(
+        left,
+        getColor("hero-overlay-color"),
+        getColor("hero-overlay-color")
+      ),
+      url(../images/hero/hero-desktop.jpg);
     background-image: linear-gradient(
         to right,
         getColor("hero-overlay-color"),
@@ -56,9 +130,25 @@
       ),
       url(../images/hero/hero-desktop.jpg);
     @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (-o-min-device-pixel-ratio: 2/1),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       & {
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            right top,
+            from(getColor("hero-overlay-color")),
+            to(getColor("hero-overlay-color"))
+          ),
+          url(../images/hero/hero-desktop@2x.jpg);
+        background-image: -o-linear-gradient(
+            left,
+            getColor("hero-overlay-color"),
+            getColor("hero-overlay-color")
+          ),
+          url(../images/hero/hero-desktop@2x.jpg);
         background-image: linear-gradient(
             to right,
             getColor("hero-overlay-color"),
