@@ -24,6 +24,12 @@
 }
 .modal-form__label {
   color: getColor("primary-text-color");
+  transition: color $duration $timing-function;
+  @media screen and (max-width: $pre-tablet) {
+    .modal-form__field:focus-within & {
+      color: getColor("accent-color");
+    }
+  }
 }
 .modal-form__input {
   height: 40px;
@@ -34,8 +40,8 @@
   border: 1px solid getColor("modal-input-color");
   border-radius: 4px;
   transition: border-color $duration $timing-function;
+  outline: none;
   .modal-form__field:focus-within & {
-    outline: none;
     border-color: getColor("accent-color");
   }
 }
@@ -49,8 +55,8 @@
   border-radius: 4px;
   transition: border-color $duration $timing-function;
   resize: none;
+  outline: none;
   .modal-form__field:focus-within & {
-    outline: none;
     border-color: getColor("accent-color");
   }
 }
