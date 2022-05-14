@@ -35,6 +35,7 @@
   border-radius: 4px;
   transition: border-color $duration $timing-function;
   .modal-form__field:focus-within & {
+    outline: none;
     border-color: getColor("accent-color");
   }
 }
@@ -49,6 +50,7 @@
   transition: border-color $duration $timing-function;
   resize: none;
   .modal-form__field:focus-within & {
+    outline: none;
     border-color: getColor("accent-color");
   }
 }
