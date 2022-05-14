@@ -8,8 +8,8 @@
   background-color: getColor("modal-overlay-color");
   opacity: 1;
   visibility: visible;
-  transition: opacity$duration $timing-function,
-    visibility$duration $timing-function;
+  transition: opacity $duration $timing-function,
+    visibility $duration $timing-function;
   @media screen and (max-width: $pre-tablet) {
     padding-top: 93px;
   }
@@ -27,8 +27,8 @@
   background-color: getColor("regular-white-color");
   box-shadow: $team-card-shaddow;
   border-radius: 4px;
-  transition: opacity$duration $timing-function,
-    transform$duration $timing-function;
+  transition: opacity $duration $timing-function,
+    transform $duration $timing-function;
   @media screen and (max-width: $pre-desktop) {
     position: relative;
     max-width: 450px;
