@@ -176,19 +176,11 @@
     color: getColor("accent-color");
   }
 }
-.contacts__link--mail {
-  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
-    padding-top: 20px;
-  }
-}
 .contacts__link--phone {
   @media screen and (max-width: $pre-tablet) {
     font-size: 34px;
     line-height: 1.18;
     color: getColor("accent-color");
-  }
-  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
-    padding-bottom: 19px;
   }
 }
 .contacts__icon {

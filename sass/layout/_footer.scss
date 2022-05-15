@@ -20,9 +20,8 @@
   }
 }
 .footer__main-block {
-  margin: 0 0 60px;
-  @media screen and (min-width: $desktop) {
-    margin: 0;
+  @media screen and (max-width: $pre-tablet) {
+    margin: 0 0 60px;
   }
 }
 .adress {
@@ -50,7 +49,9 @@
   }
 }
 .social-block {
-  margin: 0 0 60px;
+  @media screen and (max-width: $pre-tablet) {
+    margin: 0 0 60px;
+  }
   @media screen and (min-width: $desktop) {
     margin: 0 0 0 70px;
   }
@@ -71,6 +72,9 @@
   }
 }
 .subscribe-section {
+  @media screen and (min-width: $tablet) and (max-width: $pre-desktop) {
+    margin-top: 60px;
+  }
   @media screen and (min-width: $desktop) {
     margin-left: auto;
   }

@@ -521,6 +521,12 @@ body.modal-open {
   visibility: visible;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 480px) {
+  .backdrop {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 @media screen and (max-width: 767.98px) {
   .backdrop {
     padding-top: 93px;
@@ -780,12 +786,9 @@ body.modal-open {
   }
 }
 
-.footer__main-block {
-  margin: 0 0 60px;
-}
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767.98px) {
   .footer__main-block {
-    margin: 0;
+    margin: 0 0 60px;
   }
 }
 
@@ -820,8 +823,10 @@ body.modal-open {
   }
 }
 
-.social-block {
-  margin: 0 0 60px;
+@media screen and (max-width: 767.98px) {
+  .social-block {
+    margin: 0 0 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .social-block {
@@ -844,6 +849,11 @@ body.modal-open {
   background-color: #2196f3;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .subscribe-section {
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .subscribe-section {
     margin-left: auto;
@@ -1111,22 +1121,11 @@ body.modal-open {
   color: #2196f3;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .contacts__link--mail {
-    padding-top: 20px;
-  }
-}
-
 @media screen and (max-width: 767.98px) {
   .contacts__link--phone {
     font-size: 34px;
     line-height: 1.18;
     color: #2196f3;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
-  .contacts__link--phone {
-    padding-bottom: 19px;
   }
 }
 
