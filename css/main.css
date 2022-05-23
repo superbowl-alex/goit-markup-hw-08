@@ -1342,6 +1342,7 @@ body.modal-open {
   height: 100%;
   bottom: 0;
   padding: 77px 24px;
+  overflow-y: auto;
   background-color: rgba(33, 150, 243, 0.9);
   color: #ffffff;
   transform: translateY(101%);
